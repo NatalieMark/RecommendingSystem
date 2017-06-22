@@ -46,6 +46,8 @@
     <Compile Include="Files\SavingLogFile.cs" />
     <Compile Include="Exceptions\ParsingFailedException.cs" />
     <Compile Include="Program\Controller.cs" />
+    <Compile Include="Program\CLI.cs" />
+    <Compile Include="Interfaces\ICLI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="User &amp; Books\" />

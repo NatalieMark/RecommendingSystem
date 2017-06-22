@@ -108,12 +108,33 @@ namespace RecommendingSystem02
                     }
                 }
             }
-            return Recommendations;
+            return DeleteAlreadyReadFromList(User1, Recommendations);
         }
 
-		public void RecommendNewBook(User U)
+        public List<int> DeleteAlreadyReadFromList(User U, List<int> FullList)
         {
-            
+            foreach (int i in U.GetBookIDList())
+            {
+                FullList.RemoveAll(a => a == i);
+            }
+            return FullList;
+        }
+
+        public List<Book> RecommendedBooks(List<int> PriorityList)
+        {
+            List<Book> ListOfBooks = new List<Book>();
+
+            foreach (int i in PriorityList)
+                ListOfBooks.Add(GetBook(i));
+
+            return ListOfBooks;
+        }
+
+		public void PrintTopRecommendations(List<Book> TopRecommendations)
+        {
+            Console.WriteLine("Recommendations: ");
+            foreach (Book B in TopRecommendations)
+                Console.WriteLine($"{B.Name}, {B.Genre} ");
         }
 
 		public void SaveFiles(User U)

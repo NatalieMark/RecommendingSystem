@@ -1,6 +1,12 @@
 ﻿<Properties StartupConfiguration="{45D605D0-33CA-4DC2-9BE2-EC642240FBDC}|Default">
   <MonoDevelop.Ide.ItemProperties.RecommendingSystem02 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RecommendingSystem02/Interfaces/IRecommendingSystem.cs">
+    <Files>
+      <File FileName="RecommendingSystem02/Program/RecommendingSystem.cs" Line="9" Column="55" />
+      <File FileName="RecommendingSystem02/Program/Controller.cs" Line="22" Column="14" NotebookId="1" />
+      <File FileName="RecommendingSystem02/Interfaces/IRecommendingSystem.cs" Line="15" Column="53" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
