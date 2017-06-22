@@ -1,0 +1,8 @@
+/Users/nataliemark/Projects/RecommendingSystem02/RecommendingSystem02/obj/x86/Debug/RecommendingSystem02.csproj.CoreCompileInputs.cache
+/Users/nataliemark/Projects/RecommendingSystem02/RecommendingSystem02/bin/Debug/RecommendingSystem02.exe
+/Users/nataliemark/Projects/RecommendingSystem02/RecommendingSystem02/bin/Debug/RecommendingSystem02.pdb
+/Users/nataliemark/Projects/RecommendingSystem02/RecommendingSystem02/obj/x86/Debug/RecommendingSystem02.exe
+/Users/nataliemark/Projects/RecommendingSystem02/RecommendingSystem02/obj/x86/Debug/RecommendingSystem02.pdb
+/Users/nataliemark/Projects/RecommendingSystem02/RecommendingSystem02/bin/Debug/nunit.framework.dll
+/Users/nataliemark/Projects/RecommendingSystem02/RecommendingSystem02/bin/Debug/nunit.framework.xml
+/Users/nataliemark/Projects/RecommendingSystem02/RecommendingSystem02/obj/x86/Debug/RecommendingSystem02.csprojResolveAssemblyReference.cache

@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecommendingSystem02", "RecommendingSystem02\RecommendingSystem02.csproj", "{45D605D0-33CA-4DC2-9BE2-EC642240FBDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{CD128160-731F-4B3E-9CAE-176218241BA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45D605D0-33CA-4DC2-9BE2-EC642240FBDC}.Debug|x86.ActiveCfg = Debug|x86
+		{45D605D0-33CA-4DC2-9BE2-EC642240FBDC}.Debug|x86.Build.0 = Debug|x86
+		{45D605D0-33CA-4DC2-9BE2-EC642240FBDC}.Release|x86.ActiveCfg = Release|x86
+		{45D605D0-33CA-4DC2-9BE2-EC642240FBDC}.Release|x86.Build.0 = Release|x86
+		{CD128160-731F-4B3E-9CAE-176218241BA9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CD128160-731F-4B3E-9CAE-176218241BA9}.Debug|x86.Build.0 = Debug|Any CPU
+		{CD128160-731F-4B3E-9CAE-176218241BA9}.Release|x86.ActiveCfg = Release|Any CPU
+		{CD128160-731F-4B3E-9CAE-176218241BA9}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

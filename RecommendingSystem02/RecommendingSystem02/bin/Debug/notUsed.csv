@@ -1,0 +1,21 @@
+id;firstname;lastname;username;books
+1;"Filippa";"Mikkelsen";"fmikkelsen”;1,4,12,25
+2;"Børge";"Smith";"bsmith”;2,3,4
+3;"Benjamin";"Frederiksen";"bfrederiksen”;10,13,23,30,35
+4;"Bjarne";"Johansen";"bjohansen”;2,4,12,22,31
+5;"Dorthea";"Sørensen";"cr1t”;32,33,34
+6;"Dorthea";"Smith";"dsmith”;10,15,21,22,31
+7;"Mille";"Juhl";"mjuhl”;14,20,24
+8;"Grethe";"Gade";"ggade”;1,10,20,30
+9;"Rasmus";"Larsen";"rlarsen”;2,14,22
+10;"Lene";"Thorup";"lthorup”;4,14,24
+11;"Kristina";"Haugaard";"khaugaard”;25,30,32
+12;"Torben";"Andersen";"tandersen”;5,20,24,31
+13;"Nichlas";"Callesen";"ncallesen”;11,22,33
+14;"Freja";"Callesen";"fcallesen”;3,14
+15;"Gitte";"Degn";"gdegn”;12,13,15,21
+16;"Thyge";"Skou";"tskou”;4,20,24
+17;"Magnus";"Berg";"mberg”;12,22,25
+18;"Ivan";"Nielsen";"inielsen”;1,2,3,4
+19;"Mogens";"Kjær Olsen";"mko”;2,10,12
+20;"Sine";"Korsgaard";"skorsgaard”;33,35

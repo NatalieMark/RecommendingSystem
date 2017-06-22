@@ -1,0 +1,24 @@
+id;name;rating;genre
+1;”Sea Creatures”;5;”mystery”
+2;”What is that?”;8;”mystery”
+3;“Sherlock Holmes new hat”;4;”mystery”
+4;”You were supposed to be home by noon”;2;”mystery”
+5;”Who ate the last piece of cake?”;9;”mystery”
+10;“The little mermaid”;7;”family”
+11;”Lego the book”;9;”family”
+12;”H.C. Andersens stories”;6;”family”
+13;”The great bear”;3;”family”
+14;”Annie’s new friend”;4;”family”
+15;”Laugh loudest”;2;”family”
+20;”Goat attack”;10;”horror”
+21;”No not again”;4;”horror”
+22;”Why”;2;”horror”
+23;”Carl’s new friend”;7;”horror”
+24;”Why is the fridge empty again?”;9;”horror”
+25;”Sweet sleep”;6;”horror”
+30;”Best friends”;4;”comedy”
+31;”Worst friends”;8;”comedy”
+32;”Party at Frank’s”;5;”comedy”
+33;”Not you again”;1;”comedy”
+34;”Do you remember last night? Me neither”;5;”comedy”
+35;”Call Tom”;4;”comedy”

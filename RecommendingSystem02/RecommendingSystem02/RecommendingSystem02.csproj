@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{45D605D0-33CA-4DC2-9BE2-EC642240FBDC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RecommendingSystem02</RootNamespace>
+    <AssemblyName>RecommendingSystem02</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.7.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User &amp; Books\User.cs" />
+    <Compile Include="User &amp; Books\Book.cs" />
+    <Compile Include="Exceptions\InsufficientValueException.cs" />
+    <Compile Include="Interfaces\IRecommendingSystem.cs" />
+    <Compile Include="Program\RecommendingSystem.cs" />
+    <Compile Include="Program\Program.cs" />
+    <Compile Include="Files\LoadingFile.cs" />
+    <Compile Include="Files\SavingLogFile.cs" />
+    <Compile Include="Exceptions\ParsingFailedException.cs" />
+    <Compile Include="Program\Controller.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="User &amp; Books\" />
+    <Folder Include="Files\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Program\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
