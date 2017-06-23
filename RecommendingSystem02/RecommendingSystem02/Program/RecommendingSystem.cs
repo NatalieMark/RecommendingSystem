@@ -47,7 +47,7 @@ namespace RecommendingSystem02
                     genre = line[3];
                 else
                     throw new ArgumentNullException();
-                
+
                 _listOfBooks.Add(new Book(iD, name, rating, genre));
             }
 
@@ -95,19 +95,20 @@ namespace RecommendingSystem02
                 {
                     if (!User1.Equals(User2))
                     {
-						foreach (int User2ID in User2.GetBookIDList())
-						{
-							if (User1ID == User2ID)
-								IdenticalBookID = true;
-						}
-						if (IdenticalBookID)
-						{
-							Recommendations.AddRange(User2.GetBookIDList());
-							IdenticalBookID = false;
-						}
+                        foreach (int User2ID in User2.GetBookIDList())
+                        {
+                            if (User1ID == User2ID)
+                                IdenticalBookID = true;
+                        }
+                        if (IdenticalBookID)
+                        {
+                            Recommendations.AddRange(User2.GetBookIDList());
+                            IdenticalBookID = false;
+                        }
                     }
                 }
             }
+            Recommendations.Sort();
             return DeleteAlreadyReadFromList(User1, Recommendations);
         }
 
@@ -120,6 +121,11 @@ namespace RecommendingSystem02
             return FullList;
         }
 
+        public List<int> PriorityTop10(List<int> AllRecommendations)
+        {
+            return AllRecommendations;
+        }
+
         public List<Book> RecommendedBooks(List<int> PriorityList)
         {
             List<Book> ListOfBooks = new List<Book>();
@@ -130,17 +136,15 @@ namespace RecommendingSystem02
             return ListOfBooks;
         }
 
-		public void PrintTopRecommendations(List<Book> TopRecommendations)
+		public void Grouping(List<Book> AllRecommendations)
         {
-            Console.WriteLine("Recommendations: ");
-            foreach (Book B in TopRecommendations)
-                Console.WriteLine($"{B.Name}, {B.Genre} ");
         }
 
-		public void SaveFiles(User U)
+        public void SaveFiles(User U)
         {
             SavingLogFile slf = new SavingLogFile();
             slf.WritingUsersFile(U);
         }
+
     }
 }

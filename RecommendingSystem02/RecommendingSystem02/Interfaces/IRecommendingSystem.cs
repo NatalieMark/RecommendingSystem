@@ -11,10 +11,11 @@ namespace RecommendingSystem02
         void AddBookToListOfBooks(User U, Book B);
         List<int> FindAllRecommendations(string Username);
         List<int> DeleteAlreadyReadFromList(User U, List<int> FullList);
-        //List<int> PriorityTop10(List<int> AllRecommendations);
+        List<int> PriorityTop10(List<int> AllRecommendations);
 		List<Book> RecommendedBooks(List<int> PriorityList);
-        void PrintTopRecommendations(List<Book> TopRecommendations); //Not Done yet
-        //void
+        void Grouping(List<Book> AllRecommendations);
+        //void PrintTopRecommendations(List<Book> TopRecommendations); //Not Done yet
+        //void Recommendations(string Username)
         //void CalculateNewRating(Book book);
         void SaveFiles(User U);
     }

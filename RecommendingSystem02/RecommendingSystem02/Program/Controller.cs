@@ -3,25 +3,36 @@ namespace RecommendingSystem02
 {
     public class Controller
     {
-        private IRecommendingSystem _recommendingSystem;
+        private IRecommendingSystem _system;
         private ICLI _cli;
 
-        public Controller(IRecommendingSystem RecommendingSystem, ICLI CLI)
+        public Controller(IRecommendingSystem System, ICLI CLI)
         {
-            _recommendingSystem = RecommendingSystem;
+            _system = System;
             _cli = CLI;
             _cli.CommandEntered += Input;
         }
 
-        public void Input(string command)
+        public void Input(string Command)
         {
             Console.Clear();
-            if (command.Length != 0)
+            if (Command.Length != 0)
             {
-                _recommendingSystem.PrintTopRecommendations(_recommendingSystem.RecommendedBooks(_recommendingSystem.FindAllRecommendations(command)));
+                if (Command == _system.GetUser(Command).Username)
+                    PrintListOfBooks(Command);
+                else
+                    _cli.PrintUserDoesNotExist(Command);
             }
             else
                 _cli.PrintMissingInput();
+        }
+
+        public void PrintListOfBooks(string Command)
+        {
+            _cli.PrintBooks(
+                _system.RecommendedBooks(
+                    _system.PriorityTop10(
+                        _system.FindAllRecommendations(Command))));
         }
     }
 }
